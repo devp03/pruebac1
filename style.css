@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(1, 1, 42);
+}
+
+.img {
+    width: 175px;
+    height: 175px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+ul {
+    display: flex;
+}
+
+nav ul li a{
+    font-size: 18px;
+    padding: 5px 35px 0px 20px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+li:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.img-logo {
+    height: 50px;
+    width: 50px;
+}
+
+span {
+    font-size: 18px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(1, 1, 25);
+    color: rgb(244, 5, 5);
+    height: 55px;
+    padding: 44px 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.art-port {
+    margin-top: 95px;
+}
+
+.imagen-medio {
+    margin-top: 10px;
+}
+
+.check-btn {
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.imagen-portero, .imagen-central, .imagen-medio, .imagen-del, .p-name {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    gap: 13px;
+}
+
+.main .p-name {
+    color: rgb(72, 4, 4);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.logo, article {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logo:hover, article:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 952px){
+    nav ul li a{
+        font-size: 13px;
+    }
+    .img-logo {
+        height: 25px;
+        width: 25px;
+    }
+
+}
+
+@media (max-width: 858px){
+    .check-btn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+    
+}
+
+/* IPHONE 12*/
+
+@media (max-width: 390px){
+    ul {
+        display: block;
+    }
+    .main .p-name {
+        font-size: 30px;
+        color: blue;
+    }
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imagen-portero, .imagen-central, .imagen-medio, .imagen-del, .p-name {
+        flex-direction: column;
+        align-items: right;
+    }
+
+    
+}
+
